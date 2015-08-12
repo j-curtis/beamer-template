@@ -1,0 +1,38 @@
+\documentclass{beamer} 
+
+\usetheme{Rochester} 
+
+\beamertemplatenavigationsymbolsempty 
+
+\setbeamertemplate{footline}[frame number] 
+\setbeamertemplate{caption}[numbered] 
+\setbeamertemplate{table}[numbered] 
+\setbeamertemplate{figure}[numbered] 
+
+\usepackage{caption} 
+\usepackage{graphicx} 
+\usepackage{siunitx}
+
+\title[Short Title]{Title} 
+\subtitle[Short Subtitle]{Subtitle} 
+\author[Short Author]{Author} 
+\institute[Short Institute]{Institute} 
+\date{The Date}
+
+%This will give each section and sub-section their own title page
+\AtBeginSection{\frame{\sectionpage}}
+\AtBeginSubsection{\frame{\subsectionpage}}
+
+\begin{document}
+	\begin{frame}
+	\maketitle
+	\end{frame}
+	
+	\begin{frame}
+	\frametitle{Table of Contents}
+	\tableofcontents
+	\end{frame}
+	
+	
+		
+\end{document}
